@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="15705" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15706"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="TransactionTableViewCell" rowHeight="137" id="Qti-ga-dGs" customClass="TransactionTableViewCell" customModule="MyDailyEconomyApp" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="436" height="137"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="Qti-ga-dGs" id="PsQ-7d-OtI">
+                <rect key="frame" x="0.0" y="0.0" width="436" height="137"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Date" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rN1-rR-7MV">
+                        <rect key="frame" x="259" y="101" width="119" height="22"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="22" id="22w-X6-XVn"/>
+                            <constraint firstAttribute="width" constant="119" id="iF0-lT-HTX"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="italicSystem" pointSize="18"/>
+                        <color key="textColor" red="0.29396310409999998" green="0.3144122855" blue="0.34059761700000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" textAlignment="natural" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XkV-Ko-pKz">
+                        <rect key="frame" x="27" y="73" width="224" height="50"/>
+                        <color key="backgroundColor" red="0.38190354949999999" green="0.63529411759999999" blue="0.60397980920000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="224" id="74C-YR-dpf"/>
+                            <constraint firstAttribute="height" constant="50" id="vBg-bW-GAe"/>
+                        </constraints>
+                        <color key="textColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                        <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                    </textView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="20 €" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jaK-SN-4pr">
+                        <rect key="frame" x="206" y="39" width="194" height="27"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="27" id="cir-co-LcG"/>
+                            <constraint firstAttribute="width" constant="194" id="nB9-Jd-Cnu"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" weight="medium" pointSize="23"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="SALARY" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sTz-D4-thG">
+                        <rect key="frame" x="27" y="21" width="171" height="24"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="24" id="UYt-rD-5ii"/>
+                            <constraint firstAttribute="width" constant="171" id="Wr0-Gj-toy"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" weight="medium" pointSize="18"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <color key="backgroundColor" red="0.38190354949999999" green="0.63529411759999999" blue="0.60397980920000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                <constraints>
+                    <constraint firstItem="sTz-D4-thG" firstAttribute="top" secondItem="PsQ-7d-OtI" secondAttribute="top" constant="21" id="4TJ-XW-QhX"/>
+                    <constraint firstItem="rN1-rR-7MV" firstAttribute="top" secondItem="PsQ-7d-OtI" secondAttribute="top" constant="101" id="9hT-Ex-P2x"/>
+                    <constraint firstItem="sTz-D4-thG" firstAttribute="leading" secondItem="PsQ-7d-OtI" secondAttribute="leading" constant="27" id="KaM-gu-w1h"/>
+                    <constraint firstItem="rN1-rR-7MV" firstAttribute="leading" secondItem="sTz-D4-thG" secondAttribute="trailing" constant="61" id="itu-KU-noq"/>
+                    <constraint firstItem="jaK-SN-4pr" firstAttribute="centerY" secondItem="PsQ-7d-OtI" secondAttribute="centerY" constant="-16" id="l29-Cv-wRr"/>
+                    <constraint firstItem="XkV-Ko-pKz" firstAttribute="leading" secondItem="PsQ-7d-OtI" secondAttribute="leading" constant="27" id="nf0-Bn-q3C"/>
+                    <constraint firstAttribute="trailing" secondItem="jaK-SN-4pr" secondAttribute="trailing" constant="36" id="xOn-yP-Cji"/>
+                    <constraint firstItem="XkV-Ko-pKz" firstAttribute="top" secondItem="sTz-D4-thG" secondAttribute="bottom" constant="28" id="zr6-tp-OZC"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="transactionDate" destination="rN1-rR-7MV" id="bcI-zw-rdB"/>
+                <outlet property="transactionDescrip" destination="XkV-Ko-pKz" id="aZl-ft-q0u"/>
+                <outlet property="transactionTag" destination="sTz-D4-thG" id="NhK-Xv-2xR"/>
+                <outlet property="transactionValue" destination="jaK-SN-4pr" id="uO7-mF-eQu"/>
+            </connections>
+            <point key="canvasLocation" x="65.217391304347828" y="39.84375"/>
+        </tableViewCell>
+    </objects>
+</document>

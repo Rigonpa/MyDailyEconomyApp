@@ -1,0 +1,683 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		9317A33E241474590076507B /* TransactionTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9317A33D241474590076507B /* TransactionTableViewCell.swift */; };
+		93245CD824125FCB007D984D /* ValueTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93245CD724125FCB007D984D /* ValueTests.swift */; };
+		93245CDA24126678007D984D /* TagTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93245CD924126678007D984D /* TagTests.swift */; };
+		93245CDC24126D86007D984D /* TransactionTypeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93245CDB24126D86007D984D /* TransactionTypeTests.swift */; };
+		93245CDE2412759B007D984D /* AccountTransactionTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93245CDD2412759B007D984D /* AccountTransactionTests.swift */; };
+		939E9A5D2414758600A992DF /* TransactionTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 939E9A5C2414758600A992DF /* TransactionTableViewCell.xib */; };
+		93C4838E2412A95E0022AD51 /* Date&Description.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93C4838D2412A95E0022AD51 /* Date&Description.swift */; };
+		93C483902412AA600022AD51 /* Data&DescriptionTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93C4838F2412AA600022AD51 /* Data&DescriptionTests.swift */; };
+		93C483932412BE350022AD51 /* NewTransactionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93C483912412BE350022AD51 /* NewTransactionViewController.swift */; };
+		93C483942412BE350022AD51 /* NewTransactionViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 93C483922412BE350022AD51 /* NewTransactionViewController.xib */; };
+		93C4839724145EB80022AD51 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93C4839524145EB80022AD51 /* MainViewController.swift */; };
+		93C4839824145EB80022AD51 /* MainViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 93C4839624145EB80022AD51 /* MainViewController.xib */; };
+		93C4839A24145F240022AD51 /* DataController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93C4839924145F240022AD51 /* DataController.swift */; };
+		93CC7D6E24128147004A89E6 /* ValuePresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93CC7D6D24128147004A89E6 /* ValuePresenter.swift */; };
+		93CC7D7024128315004A89E6 /* ValueConverter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93CC7D6F24128315004A89E6 /* ValueConverter.swift */; };
+		93CC7D722412865B004A89E6 /* ValueConverterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93CC7D712412865B004A89E6 /* ValueConverterTests.swift */; };
+		93E1FA2C24111918007EAF83 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93E1FA2B24111918007EAF83 /* AppDelegate.swift */; };
+		93E1FA2E24111918007EAF83 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93E1FA2D24111918007EAF83 /* SceneDelegate.swift */; };
+		93E1FA352411191B007EAF83 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 93E1FA342411191B007EAF83 /* Assets.xcassets */; };
+		93E1FA382411191B007EAF83 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 93E1FA362411191B007EAF83 /* LaunchScreen.storyboard */; };
+		93E1FA432411191C007EAF83 /* MyDailyEconomyAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93E1FA422411191C007EAF83 /* MyDailyEconomyAppTests.swift */; };
+		93E1FA4E2411191C007EAF83 /* MyDailyEconomyAppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93E1FA4D2411191C007EAF83 /* MyDailyEconomyAppUITests.swift */; };
+		93E1FA5D24111A61007EAF83 /* Currency.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93E1FA5C24111A61007EAF83 /* Currency.swift */; };
+		93E1FA5F24111A81007EAF83 /* Value.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93E1FA5E24111A81007EAF83 /* Value.swift */; };
+		93E1FA6124111AC0007EAF83 /* Planning&Instructions in Resources */ = {isa = PBXBuildFile; fileRef = 93E1FA6024111AC0007EAF83 /* Planning&Instructions */; };
+		93E1FA6324111D38007EAF83 /* Tag.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93E1FA6224111D38007EAF83 /* Tag.swift */; };
+		93E1FA6524111F94007EAF83 /* TransactionType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93E1FA6424111F94007EAF83 /* TransactionType.swift */; };
+		93E1FA6724112016007EAF83 /* AccountTransaction.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93E1FA6624112016007EAF83 /* AccountTransaction.swift */; };
+		93E1FA69241175E8007EAF83 /* CurrencyTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93E1FA68241175E8007EAF83 /* CurrencyTests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		93E1FA3F2411191C007EAF83 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 93E1FA2024111918007EAF83 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 93E1FA2724111918007EAF83;
+			remoteInfo = MyDailyEconomyApp;
+		};
+		93E1FA4A2411191C007EAF83 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 93E1FA2024111918007EAF83 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 93E1FA2724111918007EAF83;
+			remoteInfo = MyDailyEconomyApp;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		9317A33D241474590076507B /* TransactionTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransactionTableViewCell.swift; sourceTree = "<group>"; };
+		93245CD724125FCB007D984D /* ValueTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ValueTests.swift; sourceTree = "<group>"; };
+		93245CD924126678007D984D /* TagTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TagTests.swift; sourceTree = "<group>"; };
+		93245CDB24126D86007D984D /* TransactionTypeTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransactionTypeTests.swift; sourceTree = "<group>"; };
+		93245CDD2412759B007D984D /* AccountTransactionTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountTransactionTests.swift; sourceTree = "<group>"; };
+		939E9A5C2414758600A992DF /* TransactionTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TransactionTableViewCell.xib; sourceTree = "<group>"; };
+		93C4838D2412A95E0022AD51 /* Date&Description.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Date&Description.swift"; sourceTree = "<group>"; };
+		93C4838F2412AA600022AD51 /* Data&DescriptionTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Data&DescriptionTests.swift"; sourceTree = "<group>"; };
+		93C483912412BE350022AD51 /* NewTransactionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewTransactionViewController.swift; sourceTree = "<group>"; };
+		93C483922412BE350022AD51 /* NewTransactionViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = NewTransactionViewController.xib; sourceTree = "<group>"; };
+		93C4839524145EB80022AD51 /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
+		93C4839624145EB80022AD51 /* MainViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MainViewController.xib; sourceTree = "<group>"; };
+		93C4839924145F240022AD51 /* DataController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataController.swift; sourceTree = "<group>"; };
+		93CC7D6D24128147004A89E6 /* ValuePresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ValuePresenter.swift; sourceTree = "<group>"; };
+		93CC7D6F24128315004A89E6 /* ValueConverter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ValueConverter.swift; sourceTree = "<group>"; };
+		93CC7D712412865B004A89E6 /* ValueConverterTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ValueConverterTests.swift; sourceTree = "<group>"; };
+		93E1FA2824111918007EAF83 /* MyDailyEconomyApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MyDailyEconomyApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		93E1FA2B24111918007EAF83 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		93E1FA2D24111918007EAF83 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		93E1FA342411191B007EAF83 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		93E1FA372411191B007EAF83 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		93E1FA392411191B007EAF83 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		93E1FA3E2411191C007EAF83 /* MyDailyEconomyAppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MyDailyEconomyAppTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		93E1FA422411191C007EAF83 /* MyDailyEconomyAppTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyDailyEconomyAppTests.swift; sourceTree = "<group>"; };
+		93E1FA442411191C007EAF83 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		93E1FA492411191C007EAF83 /* MyDailyEconomyAppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MyDailyEconomyAppUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		93E1FA4D2411191C007EAF83 /* MyDailyEconomyAppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyDailyEconomyAppUITests.swift; sourceTree = "<group>"; };
+		93E1FA4F2411191C007EAF83 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		93E1FA5C24111A61007EAF83 /* Currency.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Currency.swift; sourceTree = "<group>"; };
+		93E1FA5E24111A81007EAF83 /* Value.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Value.swift; sourceTree = "<group>"; };
+		93E1FA6024111AC0007EAF83 /* Planning&Instructions */ = {isa = PBXFileReference; lastKnownFileType = text; path = "Planning&Instructions"; sourceTree = "<group>"; };
+		93E1FA6224111D38007EAF83 /* Tag.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tag.swift; sourceTree = "<group>"; };
+		93E1FA6424111F94007EAF83 /* TransactionType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransactionType.swift; sourceTree = "<group>"; };
+		93E1FA6624112016007EAF83 /* AccountTransaction.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountTransaction.swift; sourceTree = "<group>"; };
+		93E1FA68241175E8007EAF83 /* CurrencyTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrencyTests.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		93E1FA2524111918007EAF83 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		93E1FA3B2411191C007EAF83 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		93E1FA462411191C007EAF83 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		93CC7D6C24128128004A89E6 /* DomainControllers */ = {
+			isa = PBXGroup;
+			children = (
+				93CC7D6D24128147004A89E6 /* ValuePresenter.swift */,
+				93CC7D6F24128315004A89E6 /* ValueConverter.swift */,
+			);
+			path = DomainControllers;
+			sourceTree = "<group>";
+		};
+		93E1FA1F24111918007EAF83 = {
+			isa = PBXGroup;
+			children = (
+				93E1FA2A24111918007EAF83 /* MyDailyEconomyApp */,
+				93E1FA412411191C007EAF83 /* MyDailyEconomyAppTests */,
+				93E1FA4C2411191C007EAF83 /* MyDailyEconomyAppUITests */,
+				93E1FA2924111918007EAF83 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		93E1FA2924111918007EAF83 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				93E1FA2824111918007EAF83 /* MyDailyEconomyApp.app */,
+				93E1FA3E2411191C007EAF83 /* MyDailyEconomyAppTests.xctest */,
+				93E1FA492411191C007EAF83 /* MyDailyEconomyAppUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		93E1FA2A24111918007EAF83 /* MyDailyEconomyApp */ = {
+			isa = PBXGroup;
+			children = (
+				93E1FA6024111AC0007EAF83 /* Planning&Instructions */,
+				93E1FA5B24111A48007EAF83 /* Domain */,
+				93CC7D6C24128128004A89E6 /* DomainControllers */,
+				93E1FA2B24111918007EAF83 /* AppDelegate.swift */,
+				93E1FA2D24111918007EAF83 /* SceneDelegate.swift */,
+				93C483912412BE350022AD51 /* NewTransactionViewController.swift */,
+				93C483922412BE350022AD51 /* NewTransactionViewController.xib */,
+				93C4839524145EB80022AD51 /* MainViewController.swift */,
+				93C4839624145EB80022AD51 /* MainViewController.xib */,
+				9317A33D241474590076507B /* TransactionTableViewCell.swift */,
+				939E9A5C2414758600A992DF /* TransactionTableViewCell.xib */,
+				93E1FA342411191B007EAF83 /* Assets.xcassets */,
+				93E1FA362411191B007EAF83 /* LaunchScreen.storyboard */,
+				93E1FA392411191B007EAF83 /* Info.plist */,
+			);
+			path = MyDailyEconomyApp;
+			sourceTree = "<group>";
+		};
+		93E1FA412411191C007EAF83 /* MyDailyEconomyAppTests */ = {
+			isa = PBXGroup;
+			children = (
+				93E1FA422411191C007EAF83 /* MyDailyEconomyAppTests.swift */,
+				93E1FA442411191C007EAF83 /* Info.plist */,
+				93C4838F2412AA600022AD51 /* Data&DescriptionTests.swift */,
+				93E1FA68241175E8007EAF83 /* CurrencyTests.swift */,
+				93245CD724125FCB007D984D /* ValueTests.swift */,
+				93245CD924126678007D984D /* TagTests.swift */,
+				93245CDB24126D86007D984D /* TransactionTypeTests.swift */,
+				93245CDD2412759B007D984D /* AccountTransactionTests.swift */,
+				93CC7D712412865B004A89E6 /* ValueConverterTests.swift */,
+			);
+			path = MyDailyEconomyAppTests;
+			sourceTree = "<group>";
+		};
+		93E1FA4C2411191C007EAF83 /* MyDailyEconomyAppUITests */ = {
+			isa = PBXGroup;
+			children = (
+				93E1FA4D2411191C007EAF83 /* MyDailyEconomyAppUITests.swift */,
+				93E1FA4F2411191C007EAF83 /* Info.plist */,
+			);
+			path = MyDailyEconomyAppUITests;
+			sourceTree = "<group>";
+		};
+		93E1FA5B24111A48007EAF83 /* Domain */ = {
+			isa = PBXGroup;
+			children = (
+				93C4839924145F240022AD51 /* DataController.swift */,
+				93C4838D2412A95E0022AD51 /* Date&Description.swift */,
+				93E1FA5C24111A61007EAF83 /* Currency.swift */,
+				93E1FA5E24111A81007EAF83 /* Value.swift */,
+				93E1FA6224111D38007EAF83 /* Tag.swift */,
+				93E1FA6424111F94007EAF83 /* TransactionType.swift */,
+				93E1FA6624112016007EAF83 /* AccountTransaction.swift */,
+			);
+			path = Domain;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		93E1FA2724111918007EAF83 /* MyDailyEconomyApp */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 93E1FA522411191C007EAF83 /* Build configuration list for PBXNativeTarget "MyDailyEconomyApp" */;
+			buildPhases = (
+				93E1FA2424111918007EAF83 /* Sources */,
+				93E1FA2524111918007EAF83 /* Frameworks */,
+				93E1FA2624111918007EAF83 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = MyDailyEconomyApp;
+			productName = MyDailyEconomyApp;
+			productReference = 93E1FA2824111918007EAF83 /* MyDailyEconomyApp.app */;
+			productType = "com.apple.product-type.application";
+		};
+		93E1FA3D2411191C007EAF83 /* MyDailyEconomyAppTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 93E1FA552411191C007EAF83 /* Build configuration list for PBXNativeTarget "MyDailyEconomyAppTests" */;
+			buildPhases = (
+				93E1FA3A2411191C007EAF83 /* Sources */,
+				93E1FA3B2411191C007EAF83 /* Frameworks */,
+				93E1FA3C2411191C007EAF83 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				93E1FA402411191C007EAF83 /* PBXTargetDependency */,
+			);
+			name = MyDailyEconomyAppTests;
+			productName = MyDailyEconomyAppTests;
+			productReference = 93E1FA3E2411191C007EAF83 /* MyDailyEconomyAppTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		93E1FA482411191C007EAF83 /* MyDailyEconomyAppUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 93E1FA582411191C007EAF83 /* Build configuration list for PBXNativeTarget "MyDailyEconomyAppUITests" */;
+			buildPhases = (
+				93E1FA452411191C007EAF83 /* Sources */,
+				93E1FA462411191C007EAF83 /* Frameworks */,
+				93E1FA472411191C007EAF83 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				93E1FA4B2411191C007EAF83 /* PBXTargetDependency */,
+			);
+			name = MyDailyEconomyAppUITests;
+			productName = MyDailyEconomyAppUITests;
+			productReference = 93E1FA492411191C007EAF83 /* MyDailyEconomyAppUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		93E1FA2024111918007EAF83 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1130;
+				LastUpgradeCheck = 1130;
+				ORGANIZATIONNAME = "Ricardo González Pacheco";
+				TargetAttributes = {
+					93E1FA2724111918007EAF83 = {
+						CreatedOnToolsVersion = 11.3.1;
+					};
+					93E1FA3D2411191C007EAF83 = {
+						CreatedOnToolsVersion = 11.3.1;
+						TestTargetID = 93E1FA2724111918007EAF83;
+					};
+					93E1FA482411191C007EAF83 = {
+						CreatedOnToolsVersion = 11.3.1;
+						TestTargetID = 93E1FA2724111918007EAF83;
+					};
+				};
+			};
+			buildConfigurationList = 93E1FA2324111918007EAF83 /* Build configuration list for PBXProject "MyDailyEconomyApp" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 93E1FA1F24111918007EAF83;
+			productRefGroup = 93E1FA2924111918007EAF83 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				93E1FA2724111918007EAF83 /* MyDailyEconomyApp */,
+				93E1FA3D2411191C007EAF83 /* MyDailyEconomyAppTests */,
+				93E1FA482411191C007EAF83 /* MyDailyEconomyAppUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		93E1FA2624111918007EAF83 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				93C483942412BE350022AD51 /* NewTransactionViewController.xib in Resources */,
+				93E1FA382411191B007EAF83 /* LaunchScreen.storyboard in Resources */,
+				93C4839824145EB80022AD51 /* MainViewController.xib in Resources */,
+				93E1FA352411191B007EAF83 /* Assets.xcassets in Resources */,
+				939E9A5D2414758600A992DF /* TransactionTableViewCell.xib in Resources */,
+				93E1FA6124111AC0007EAF83 /* Planning&Instructions in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		93E1FA3C2411191C007EAF83 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		93E1FA472411191C007EAF83 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		93E1FA2424111918007EAF83 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				93E1FA5D24111A61007EAF83 /* Currency.swift in Sources */,
+				93E1FA6724112016007EAF83 /* AccountTransaction.swift in Sources */,
+				93C483932412BE350022AD51 /* NewTransactionViewController.swift in Sources */,
+				93C4839724145EB80022AD51 /* MainViewController.swift in Sources */,
+				93E1FA2C24111918007EAF83 /* AppDelegate.swift in Sources */,
+				93CC7D7024128315004A89E6 /* ValueConverter.swift in Sources */,
+				93E1FA6324111D38007EAF83 /* Tag.swift in Sources */,
+				93CC7D6E24128147004A89E6 /* ValuePresenter.swift in Sources */,
+				9317A33E241474590076507B /* TransactionTableViewCell.swift in Sources */,
+				93E1FA2E24111918007EAF83 /* SceneDelegate.swift in Sources */,
+				93E1FA6524111F94007EAF83 /* TransactionType.swift in Sources */,
+				93E1FA5F24111A81007EAF83 /* Value.swift in Sources */,
+				93C4839A24145F240022AD51 /* DataController.swift in Sources */,
+				93C4838E2412A95E0022AD51 /* Date&Description.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		93E1FA3A2411191C007EAF83 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				93245CDE2412759B007D984D /* AccountTransactionTests.swift in Sources */,
+				93CC7D722412865B004A89E6 /* ValueConverterTests.swift in Sources */,
+				93245CDA24126678007D984D /* TagTests.swift in Sources */,
+				93E1FA69241175E8007EAF83 /* CurrencyTests.swift in Sources */,
+				93E1FA432411191C007EAF83 /* MyDailyEconomyAppTests.swift in Sources */,
+				93C483902412AA600022AD51 /* Data&DescriptionTests.swift in Sources */,
+				93245CD824125FCB007D984D /* ValueTests.swift in Sources */,
+				93245CDC24126D86007D984D /* TransactionTypeTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		93E1FA452411191C007EAF83 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				93E1FA4E2411191C007EAF83 /* MyDailyEconomyAppUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		93E1FA402411191C007EAF83 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 93E1FA2724111918007EAF83 /* MyDailyEconomyApp */;
+			targetProxy = 93E1FA3F2411191C007EAF83 /* PBXContainerItemProxy */;
+		};
+		93E1FA4B2411191C007EAF83 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 93E1FA2724111918007EAF83 /* MyDailyEconomyApp */;
+			targetProxy = 93E1FA4A2411191C007EAF83 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		93E1FA362411191B007EAF83 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				93E1FA372411191B007EAF83 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		93E1FA502411191C007EAF83 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEVELOPMENT_TEAM = DevTeam;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		93E1FA512411191C007EAF83 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEVELOPMENT_TEAM = DevTeam;
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		93E1FA532411191C007EAF83 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = MyDailyEconomyApp/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.rigonpa.MyDailyEconomyApp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		93E1FA542411191C007EAF83 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = MyDailyEconomyApp/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.rigonpa.MyDailyEconomyApp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		93E1FA562411191C007EAF83 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = MyDailyEconomyAppTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.rigonpa.MyDailyEconomyAppTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/MyDailyEconomyApp.app/MyDailyEconomyApp";
+			};
+			name = Debug;
+		};
+		93E1FA572411191C007EAF83 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = MyDailyEconomyAppTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.rigonpa.MyDailyEconomyAppTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/MyDailyEconomyApp.app/MyDailyEconomyApp";
+			};
+			name = Release;
+		};
+		93E1FA592411191C007EAF83 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = MyDailyEconomyAppUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.rigonpa.MyDailyEconomyAppUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = MyDailyEconomyApp;
+			};
+			name = Debug;
+		};
+		93E1FA5A2411191C007EAF83 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = MyDailyEconomyAppUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.rigonpa.MyDailyEconomyAppUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = MyDailyEconomyApp;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		93E1FA2324111918007EAF83 /* Build configuration list for PBXProject "MyDailyEconomyApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				93E1FA502411191C007EAF83 /* Debug */,
+				93E1FA512411191C007EAF83 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		93E1FA522411191C007EAF83 /* Build configuration list for PBXNativeTarget "MyDailyEconomyApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				93E1FA532411191C007EAF83 /* Debug */,
+				93E1FA542411191C007EAF83 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		93E1FA552411191C007EAF83 /* Build configuration list for PBXNativeTarget "MyDailyEconomyAppTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				93E1FA562411191C007EAF83 /* Debug */,
+				93E1FA572411191C007EAF83 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		93E1FA582411191C007EAF83 /* Build configuration list for PBXNativeTarget "MyDailyEconomyAppUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				93E1FA592411191C007EAF83 /* Debug */,
+				93E1FA5A2411191C007EAF83 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 93E1FA2024111918007EAF83 /* Project object */;
+}

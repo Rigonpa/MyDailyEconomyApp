@@ -1,0 +1,44 @@
+
+
+    PLANNING
+---------------
+
+Domain structure:
+
+    1. Date and Description object.
+
+    2. Currency object - Test
+       - Assumptions:
+           A. Only three currencies: EUR, USD, BTC
+           
+    3. Amount object - Test
+
+    4. Tag object - Test
+       - Assumptions:
+           A. Examples: salary, betEarnings, clothesSales // renting, food, car, party
+           
+    5. TransactionType object - Test
+       - Assumptions:
+           A. Only two types: Income and Expense
+           
+    6. AccountTransaction (amount, tag, transactionType) - Test
+       - Restrictions:
+           A. Tags of income only appearing in TypeMov Income section
+           B. Tags of expense only appearing in TypeMov Expense section
+
+
+    INSTRUCTIONS
+---------------------
+
+    1.  Use it to register all the cash transactions produced in your daily economy.
+        Transactions for covering expenses (renting, food, car, party expenses) and
+        receiving incomes (salary, bet earnings or clothes sales). Both lists could be increased,
+        even let the user create its own expense and income types.
+
+    2.  Do not care about currencies. Feel free to register an expense in bitcoin and let the system
+        make the calculus with all transactions in euros. Other currencies could be include via API Rest
+        to have all possible conversion rates.
+        
+    3.  Finally, lookup your expenses and incomes independently, but also review all transactions in the
+        exact order of entrance to the system. Do not forget to view your available current cash.
+        

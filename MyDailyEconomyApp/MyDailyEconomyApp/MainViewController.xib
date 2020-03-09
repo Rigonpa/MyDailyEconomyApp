@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="15705" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15706"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="MainViewController" customModule="MyDailyEconomyApp" customModuleProvider="target">
+            <connections>
+                <outlet property="segmentedValue" destination="0bM-7F-Crj" id="tuG-Kg-59h"/>
+                <outlet property="tableView" destination="8fm-Im-POe" id="irY-3N-XQ4"/>
+                <outlet property="totalAmount" destination="xVQ-YS-42M" id="5qW-oy-bIG"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="0bM-7F-Crj">
+                    <rect key="frame" x="20" y="87" width="374" height="32"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="31" id="Eam-fF-JiO"/>
+                    </constraints>
+                    <segments>
+                        <segment title="Income"/>
+                        <segment title="Balance"/>
+                        <segment title="Expense"/>
+                    </segments>
+                    <connections>
+                        <action selector="changeButton:" destination="-1" eventType="valueChanged" id="3CZ-f5-bdz"/>
+                    </connections>
+                </segmentedControl>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="8fm-Im-POe">
+                    <rect key="frame" x="0.0" y="263" width="414" height="599"/>
+                    <color key="backgroundColor" red="0.38190354949999999" green="0.63529411759999999" blue="0.60397980920000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <color key="sectionIndexBackgroundColor" red="0.38190354949999999" green="0.63529411759999999" blue="0.60397980920000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                </tableView>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KHD-C8-v1A">
+                    <rect key="frame" x="293" y="744" width="59" height="54"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="59" id="43r-Zr-6Ci"/>
+                        <constraint firstAttribute="height" constant="54" id="UWq-5q-yAF"/>
+                    </constraints>
+                    <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <state key="normal" image="plus" catalog="system">
+                        <preferredSymbolConfiguration key="preferredSymbolConfiguration" configurationType="pointSize" pointSize="55"/>
+                    </state>
+                    <connections>
+                        <action selector="addButton:" destination="-1" eventType="touchUpInside" id="lU0-Rq-bdB"/>
+                    </connections>
+                </button>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xVQ-YS-42M">
+                    <rect key="frame" x="20" y="182" width="374" height="32"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="32" id="NBN-2z-KGK"/>
+                    </constraints>
+                    <attributedString key="attributedText">
+                        <fragment content="Suma">
+                            <attributes>
+                                <color key="NSColor" name="textColor" catalog="System" colorSpace="catalog"/>
+                                <font key="NSFont" size="37" name="AndaleMono"/>
+                                <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                            </attributes>
+                        </fragment>
+                    </attributedString>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <color key="backgroundColor" red="0.38190354949999999" green="0.63529411759999999" blue="0.60397980920000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <color key="tintColor" red="0.38190354949999999" green="0.63529411759999999" blue="0.60397980920000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="8fm-Im-POe" firstAttribute="top" secondItem="xVQ-YS-42M" secondAttribute="bottom" constant="49" id="30z-I4-wwO"/>
+                <constraint firstItem="8fm-Im-POe" firstAttribute="bottom" secondItem="fnl-2z-Ty3" secondAttribute="bottom" id="5Ri-LX-07T"/>
+                <constraint firstItem="8fm-Im-POe" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="5d9-AA-aYB"/>
+                <constraint firstItem="0bM-7F-Crj" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="43" id="8rB-Vx-GhE"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="0bM-7F-Crj" secondAttribute="trailing" constant="20" id="Fu5-Gn-z4L"/>
+                <constraint firstItem="xVQ-YS-42M" firstAttribute="top" secondItem="0bM-7F-Crj" secondAttribute="bottom" constant="64" id="HYX-SB-4p1"/>
+                <constraint firstItem="0bM-7F-Crj" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="20" id="IuB-r6-NCH"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="xVQ-YS-42M" secondAttribute="trailing" constant="20" id="LzS-KI-Kob"/>
+                <constraint firstItem="8fm-Im-POe" firstAttribute="trailing" secondItem="fnl-2z-Ty3" secondAttribute="trailing" id="UPR-ec-FTy"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="KHD-C8-v1A" secondAttribute="trailing" constant="62" id="Z3D-HI-ivi"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="KHD-C8-v1A" secondAttribute="bottom" constant="64" id="ndf-g4-5KX"/>
+                <constraint firstItem="xVQ-YS-42M" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="20" id="wS8-c8-Jtt"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <point key="canvasLocation" x="131.8840579710145" y="153.34821428571428"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="plus" catalog="system" width="64" height="56"/>
+    </resources>
+</document>
