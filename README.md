@@ -3,7 +3,7 @@
 > Manage your daily personal cash flow and review it all times you need.
 
 - UITableView
-- Dropdown menu (constraints used for make views visible)
+- Dropdown menu (constraints used for making views visible)
 
 -------
 
